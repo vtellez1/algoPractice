@@ -16,7 +16,7 @@ function sameFrequency(num1, num2){
       }
     }
   
-    for(let i=0; i < num2arr.length; i++){
+    for(let i = 0; i < num2arr.length; i++){
       if(!(num2arr[i] in storage) || storage[num2arr[i]] < 1){
         return false
       } else {
