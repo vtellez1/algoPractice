@@ -40,3 +40,24 @@ function makeSevenTriangle(){
   };
   
   fizzBuzz()
+
+  function chessBoard(){
+    let size = 8;
+    let board = '';
+    
+    // y is each line
+    for ( var y = 1; y <= size; y++ ){
+      // x is each character in line
+      for ( var x = 1; x <= size; x++ ){     
+        if((x + y) % 2 === 0){
+          board += ' ';
+        } else {
+          board += '#';
+        };
+      }; 
+      board += '\n';
+    };
+    console.log(board);
+  }
+  
+  chessBoard()
